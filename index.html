@@ -9,8 +9,14 @@
 </head>
 <body>
 	<!--======START OF CONTENT========-->
-	<h1 class="mt-8 text-center text-3xl">Remove this line and start coding with tailwindcss and alpinejs</h1>
-	
+
+	<div class="mx-16 mt-8 h-96 relative" x-data="{ isShowing:true }">
+		<button class="peer border-2 px-4 py-2 hover:border-red-600 hover:bg-red-50" x-on:click="isShowing = !isShowing">Toggle</button>
+		<div class="peer-hover:bg-red-50 border-2 p-4 mt-8 font-normal leading-7" x-show="isShowing">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam rem cupiditate dolores. Explicabo labore maxime dolore nostrum, dolorum minima veniam quod eligendi perferendis omnis unde quibusdam, laborum eos, ipsa itaque.
+		</div>
+	</div>
+
 	<!--======END OF CONTENT========-->
 <script type="module" src="./assets/js/main.js"></script>
 </body>
